@@ -1,0 +1,28 @@
+html,body {
+    padding: 0em;
+    margin: 0em;
+    box-sizing: border-box;
+    background-image: url('https://cdn.wallpapersafari.com/9/33/FB9I2c.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .profile{
+        padding-top: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            max-height: 8em;
+            max-width: 8em;
+            border-radius: 15em;
+        }
+        h2{
+            font-size: 1.5em;
+            color: aliceblue;
+        }
+    }
+}
+
