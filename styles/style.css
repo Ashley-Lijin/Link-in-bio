@@ -6,12 +6,14 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  color: aliceblue;
 }
 html a, body a {
   text-decoration: none;
+  color: aliceblue;
 }
 html .profile, body .profile {
-  padding-top: 5em;
+  padding-top: 7em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,39 +26,52 @@ html .profile img, body .profile img {
 }
 html .profile h2, body .profile h2 {
   font-size: 1.5em;
-  color: aliceblue;
 }
-html .btn, body .btn {
+html main, body main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7em;
+  gap: 2em;
+}
+html main .btn, body main .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
 }
-html .btn .logo, body .btn .logo {
+html main .btn .logo, body main .btn .logo {
   display: flex;
-  height: 40px;
-  width: 50px;
-  background-color: aqua;
+  height: 50px;
+  width: 70px;
+  background-color: rgba(50, 50, 50, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   border-radius: 25px 0px 0px 25px;
   justify-content: center;
+  align-items: center;
 }
-html .btn .logo img, body .btn .logo img {
-  max-width: 8em;
-  max-height: 8em;
+html main .btn .logo img, body main .btn .logo img {
+  max-width: 1.5em;
+  max-height: 1.5em;
 }
-html .btn .title, body .btn .title {
+html main .btn .title, body main .btn .title {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 50px;
   width: 300px;
-  background-color: red;
+  background-color: rgba(30, 30, 30, 0.7);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   border-radius: 0px 25px 25px 0px;
+  transition: ease-in-out 300ms;
 }
-html .btn .title h3, body .btn .title h3 {
+html main .btn .title h3, body main .btn .title h3 {
   padding-left: 5em;
   transition: ease-in-out 300ms;
-  color: aliceblue;
 }
-html .btn .title:hover h3, body .btn .title:hover h3 {
-  padding-left: 7em;
+html main .btn .title:hover, body main .btn .title:hover {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+html main .btn .title:hover h3, body main .btn .title:hover h3 {
+  padding-left: 6em;
 }/*# sourceMappingURL=style.css.map */
