@@ -7,6 +7,9 @@ html, body {
   background-size: cover;
   height: 100vh;
 }
+html a, body a {
+  text-decoration: none;
+}
 html .profile, body .profile {
   padding-top: 5em;
   display: flex;
@@ -22,4 +25,38 @@ html .profile img, body .profile img {
 html .profile h2, body .profile h2 {
   font-size: 1.5em;
   color: aliceblue;
+}
+html .btn, body .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+html .btn .logo, body .btn .logo {
+  display: flex;
+  height: 40px;
+  width: 50px;
+  background-color: aqua;
+  border-radius: 25px 0px 0px 25px;
+  justify-content: center;
+}
+html .btn .logo img, body .btn .logo img {
+  max-width: 8em;
+  max-height: 8em;
+}
+html .btn .title, body .btn .title {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 300px;
+  background-color: red;
+  border-radius: 0px 25px 25px 0px;
+}
+html .btn .title h3, body .btn .title h3 {
+  padding-left: 5em;
+  transition: ease-in-out 300ms;
+  color: aliceblue;
+}
+html .btn .title:hover h3, body .btn .title:hover h3 {
+  padding-left: 7em;
 }/*# sourceMappingURL=style.css.map */

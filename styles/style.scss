@@ -6,6 +6,10 @@ html,body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    
+    a{
+        text-decoration: none;
+    }
 
     .profile{
         padding-top: 5em;
@@ -22,6 +26,46 @@ html,body {
         h2{
             font-size: 1.5em;
             color: aliceblue;
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        .logo{
+            display: flex;
+            height: 40px;
+            width: 50px;
+            background-color: aqua;
+            border-radius:25px 0px 0px 25px ;
+            justify-content: center;
+
+            img{
+                max-width: 8em;
+                max-height: 8em;
+            }
+        }
+
+        .title{
+            display: flex;
+            align-items: center;
+            height: 40px;
+            width: 300px;
+            background-color: red;
+            border-radius: 0px 25px 25px 0px;
+            h3{
+                padding-left: 5em;
+                transition: ease-in-out 300ms;
+                color: aliceblue;
+            }
+            
+        }
+        .title:hover{
+            h3{
+                padding-left: 7em;
+            }
         }
     }
 }
