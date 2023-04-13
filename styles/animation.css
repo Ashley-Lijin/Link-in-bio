@@ -1,0 +1,13 @@
+main {
+  position: relative;
+  opacity: 0;
+  transform: translatey(50px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+header {
+  position: relative;
+  opacity: 0;
+  transform: translatey(-50px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
