@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/animation.css">
     <title>Ash_2k7 - Links</title>
 </head>
 <body>
+    <div class="dark"></div>
     <header class="profile">
-        <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg"
-            alt="">
+        <img src="./images/prof.jpg"
+            alt="prof"
+            class="img">
         <h2>@Ash_2k7</h2>
     </header>
 
     <main class="cointainer">
-        <div>
+        <div class="yt">
             <a target="_blank" href="https://www.youtube.com/channel/UCVg-GebNMpeT-KMdbgPJCRQ" class="link">
                 <div class="btn">
                     <div class="logo"><img src="./images/yt.png" alt=""></div>
@@ -27,7 +28,7 @@
             </a>
         </div>
 
-        <div>
+        <div class="ig">
             <a target="_blank" href="https://www.instagram.com/ash_2k7/" class="link">
                 <div class="btn">
                     <div class="logo"><img src="./images/insta.png" alt=""></div>
@@ -38,7 +39,7 @@
             </a>
         </div>
 
-        <div>
+        <div class="git">
             <a target="_blank" href="https://github.com/Ashley-Lijin" class="link">
                 <div class="btn">
                     <div class="logo"><img src="./images/git.png" alt=""></div>
@@ -49,7 +50,7 @@
             </a>
         </div>
 
-        <div>
+        <div class="med">
             <a target="_blank" href="https://medium.com/@ashleylijin7" class="link">
                 <div class="btn">
                     <div class="logo"><img src="./images/medium.png" alt=""></div>
@@ -62,16 +63,5 @@
     </main>
 </body>
 
-<script>
-    setTimeout(() => {
-        const main = document.querySelector('main')
-        main.style.opacity = 1
-        main.style.transform = 'translatey(0px)'
-    },800)
-    setTimeout(() => {
-        const header = document.querySelector('header')
-        header.style.opacity = 1
-        header.style.transform = 'translatey(0px)'
-    },400)
-</script>
+<script src="./index.js"></script>
 </html>
