@@ -1,14 +1,14 @@
 setTimeout(() => {
   const header = document.querySelector("header");
   header.style.opacity = 1;
-  header.style.transform = "translatey(0px)";
-}, 600);
+  header.style.filter = "blur(0px)";
+}, 500);
 
 setTimeout(() => {
   const yt = document.querySelector(".yt");
   yt.style.opacity = 1;
   yt.style.transform = "translatey(0px)";
-}, 400);
+}, 450);
 
 setTimeout(() => {
   const ig = document.querySelector(".ig");
@@ -26,10 +26,4 @@ setTimeout(() => {
   const med = document.querySelector(".med");
   med.style.opacity = 1;
   med.style.transform = "translatey(0px)";
-}, 1000);
-
-setTimeout(() => {
-  const header = document.querySelector("header");
-  header.style.opacity = 1;
-  header.style.filter = "blur(0px)";
 }, 1000);
