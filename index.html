@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animation.css">
     <title>Ash_2k7 - Links</title>
 </head>
 <body>
@@ -14,12 +15,14 @@
         <h2>@Ash_2k7</h2>
     </header>
 
-    <main>
+    <main class="cointainer">
         <div>
             <a target="_blank" href="https://www.youtube.com/channel/UCVg-GebNMpeT-KMdbgPJCRQ" class="link">
                 <div class="btn">
                     <div class="logo"><img src="./images/yt.png" alt=""></div>
-                    <div class="title"><h3>Youtube</h3></div>
+                    <div class="title">
+                        <h3>Youtube</h3>
+                    </div>
                 </div>
             </a>
         </div>
@@ -28,7 +31,9 @@
             <a target="_blank" href="https://www.instagram.com/ash_2k7/" class="link">
                 <div class="btn">
                     <div class="logo"><img src="./images/insta.png" alt=""></div>
-                    <div class="title"><h3>Instagram</h3></div>
+                    <div class="title">
+                        <h3>Instagram</h3>
+                    </div>
                 </div>
             </a>
         </div>
@@ -37,7 +42,9 @@
             <a target="_blank" href="https://github.com/Ashley-Lijin" class="link">
                 <div class="btn">
                     <div class="logo"><img src="./images/git.png" alt=""></div>
-                    <div class="title"><h3>Github</h3></div>
+                    <div class="title">
+                        <h3>Github</h3>
+                    </div>
                 </div>
             </a>
         </div>
@@ -46,10 +53,25 @@
             <a target="_blank" href="https://medium.com/@ashleylijin7" class="link">
                 <div class="btn">
                     <div class="logo"><img src="./images/medium.png" alt=""></div>
-                    <div class="title"><h3>Medium</h3></div>
+                    <div class="title">
+                        <h3>Medium</h3>
+                    </div>
                 </div>
             </a>
         </div>
     </main>
 </body>
+
+<script>
+    setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.transform = 'translatey(0px)'
+    },800)
+    setTimeout(() => {
+        const header = document.querySelector('header')
+        header.style.opacity = 1
+        header.style.transform = 'translatey(0px)'
+    },400)
+</script>
 </html>
