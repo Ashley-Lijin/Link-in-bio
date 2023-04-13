@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   padding: 0em;
   margin: 0em;
   box-sizing: border-box;
@@ -9,82 +8,84 @@ body {
   height: 100vh;
   color: aliceblue;
 }
-html a,
-body a {
+html a, body a {
   text-decoration: none;
   color: aliceblue;
 }
-html .profile,
-body .profile {
+html .profile, body .profile {
   padding-top: 7em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-html .profile img,
-body .profile img {
+html .profile img, body .profile img {
   max-height: 8em;
   max-width: 8em;
   border-radius: 15em;
 }
-html .profile h2,
-body .profile h2 {
+html .profile h2, body .profile h2 {
   font-size: 1.5em;
 }
-html main,
-body main {
+html main, body main {
   display: flex;
   flex-direction: column;
   margin-top: 7em;
   gap: 2em;
 }
-html main .btn,
-body main .btn {
+html main .btn, body main .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
 }
-html main .btn .logo,
-body main .btn .logo {
+html main .btn .logo, body main .btn .logo {
   display: flex;
   height: 50px;
   width: 70px;
   background-color: rgba(50, 50, 50, 0.5);
   -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   border-radius: 25px 0px 0px 25px;
   justify-content: center;
   align-items: center;
 }
-html main .btn .logo img,
-body main .btn .logo img {
+html main .btn .logo img, body main .btn .logo img {
   max-width: 1.5em;
   max-height: 1.5em;
 }
-html main .btn .title,
-body main .btn .title {
+html main .btn .title, body main .btn .title {
   display: flex;
   align-items: center;
   height: 50px;
   width: 300px;
   background-color: rgba(30, 30, 30, 0.7);
   -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   border-radius: 0px 25px 25px 0px;
   transition: ease-in-out 300ms;
 }
-html main .btn .title h3,
-body main .btn .title h3 {
+html main .btn .title h3, body main .btn .title h3 {
   padding-left: 5em;
   transition: ease-in-out 300ms;
 }
-html main .btn .title:hover,
-body main .btn .title:hover {
+html main .btn .title:hover, body main .btn .title:hover {
   background-color: rgba(50, 50, 50, 0.5);
 }
-html main .btn .title:hover h3,
-body main .btn .title:hover h3 {
+html main .btn .title:hover h3, body main .btn .title:hover h3 {
   padding-left: 6em;
-} /*# sourceMappingURL=style.css.map */
+}
+
+main {
+  position: relative;
+  opacity: 0;
+  transform: translatey(50px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+header {
+  position: relative;
+  opacity: 0;
+  transform: translatey(-50px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}/*# sourceMappingURL=style.css.map */
