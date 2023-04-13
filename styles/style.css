@@ -2,7 +2,8 @@ html, body {
   padding: 0em;
   margin: 0em;
   box-sizing: border-box;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg.jpg");
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -30,7 +31,7 @@ html .profile h2, body .profile h2 {
 html main, body main {
   display: flex;
   flex-direction: column;
-  margin-top: 7em;
+  margin-top: 5em;
   gap: 2em;
 }
 html main .btn, body main .btn {
@@ -76,7 +77,28 @@ html main .btn .title:hover h3, body main .btn .title:hover h3 {
   padding-left: 6em;
 }
 
-main {
+.yt {
+  position: relative;
+  opacity: 0;
+  transform: translatey(50px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.ig {
+  position: relative;
+  opacity: 0;
+  transform: translatey(50px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.git {
+  position: relative;
+  opacity: 0;
+  transform: translatey(50px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.med {
   position: relative;
   opacity: 0;
   transform: translatey(50px);
@@ -84,8 +106,7 @@ main {
 }
 
 header {
-  position: relative;
   opacity: 0;
-  transform: translatey(-50px);
-  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+  filter: blur(10px);
+  transition: opacity 800ms ease-in-out, filter 800ms ease-in-out;
 }/*# sourceMappingURL=style.css.map */
